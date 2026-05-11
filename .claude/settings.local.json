@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"d:\\\\KHJ\\\\Project_NGO\")",
+      "Bash(Select-Object Name, PSIsContainer)",
+      "Bash(cmd /c dir \"d:\\\\KHJ\\\\Project_NGO\" /ad /b)",
+      "Bash(Get-ChildItem -Recurse -Path \"d:\\\\KHJ\\\\Project_NGO\\\\Assets\\\\Scripts\" -Name)",
+      "Bash(Sort-Object)",
+      "PowerShell(Get-ChildItem \"d:\\\\KHJ\\\\Project_NGO\\\\Assets\\\\Scripts\" -Force | ForEach-Object { $_.FullName })"
+    ]
+  }
+}
